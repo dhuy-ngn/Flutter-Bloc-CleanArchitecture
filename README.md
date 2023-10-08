@@ -1,14 +1,14 @@
 # Tutorials for this project
 
-* English: https://medium.com/@NALSengineering/list/building-a-perfect-boilerplate-flutter-project-from-scratch-3c2b29d9dfa8
+- English: https://medium.com/@NALSengineering/list/building-a-perfect-boilerplate-flutter-project-from-scratch-3c2b29d9dfa8
 
-* Vietnamese: https://medium.com/@NALSengineering/list/flutter-xay-dung-base-project-hoan-hao-tu-a-en-a-c240f845f660
+- Vietnamese: https://medium.com/@NALSengineering/list/flutter-xay-dung-base-project-hoan-hao-tu-a-en-a-c240f845f660
 
-* Code-generation tool: https://github.com/ntminhdn/Flutter-Bloc-CleanArchitecture/blob/master/tools/nals/nalsmobilebrain-0.10.0.vsix
+- Code-generation tool: https://github.com/ntminhdn/Flutter-Bloc-CleanArchitecture/blob/master/tools/nals/nalsmobilebrain-0.10.0.vsix
 
-* Tool's features: https://medium.com/@NALSengineering/a-must-have-tool-if-youre-working-with-clean-architecture-4cfd07b473b6
+- Tool's features: https://medium.com/@NALSengineering/a-must-have-tool-if-youre-working-with-clean-architecture-4cfd07b473b6
 
-* How to build the tool: https://medium.com/@NALSengineering/code-2x-faster-with-custom-vscode-extensions-4f68e362be3d
+- How to build the tool: https://medium.com/@NALSengineering/code-2x-faster-with-custom-vscode-extensions-4f68e362be3d
 
 # Flutter Bloc - Clean Architecture
 
@@ -34,8 +34,7 @@ Flutter project using clean architecture and bloc pattern.
 1. Utils: [rxdart](https://pub.dev/packages/rxdart), [dartx](https://pub.dev/packages/dartx), [async](https://pub.dev/packages/async)
 1. Assets generator: [flutter_gen_runner](https://pub.dev/packages/flutter_gen_runner), [flutter_launcher_icons](https://pub.dev/packages/flutter_launcher_icons), [flutter_native_splash](https://pub.dev/packages/flutter_native_splash)
 
-
-16. Shimmer loading effect
+1. Shimmer loading effect
 
 https://user-images.githubusercontent.com/22645452/204953475-65522ee8-caaf-4fa4-9305-507c390914f3.mp4
 
@@ -59,7 +58,6 @@ https://user-images.githubusercontent.com/22645452/204954605-fe57620c-69af-4628-
 
 https://user-images.githubusercontent.com/22645452/204954653-a704d380-0f6a-419d-a740-3bff74252ce2.mp4
 
-
 ## Getting Started
 
 ### Requirements
@@ -74,19 +72,23 @@ https://user-images.githubusercontent.com/22645452/204954653-a704d380-0f6a-419d-
 - WARN: If you already installed `melos` and `lefthook`, you could omit this step.
 
 - Install melos:
-    - Run `dart pub global activate melos 3.1.0`
+
+  - Run `dart pub global activate melos 3.1.0`
 
 - Install lefthook (optional):
-    - Run `gem install lefthook`
+
+  - Run `gem install lefthook`
 
 - Export paths:
-    - Add to `.zshrc` or `.bashrc` file
-```    
+  - Add to `.zshrc` or `.bashrc` file
+
+```
 export PATH="$PATH:<path to flutter>/flutter/bin"
 export PATH="$PATH:<path to flutter>/flutter/bin/cache/dart-sdk/bin"
 export PATH="$PATH:~/.pub-cache/bin"
 export PATH="$PATH:~/.gem/gems/lefthook-0.7.7/bin"
 ```
+
     - Save file `.zshrc`
     - Run `source ~/.zshrc`
 
@@ -98,26 +100,34 @@ export PATH="$PATH:~/.gem/gems/lefthook-0.7.7/bin"
 - Run `lefthook install` (optional)
 - Run & Enjoy!
 
+## Running on iOS Simulator
+
+- run `cd ~/.cocoapods/repos && git clone "https://github.com/CocoaPods/Specs" master --depth 1`
+- Add to Podfile `source 'https://github.com/CocoaPods/Specs.git`
+- Run `pod install`
+
 ## Upgrade Flutter
+
 - Update Flutter version in:
-    - [README.md](#requirements)
-    - [bitbucket-pipelines.yml](bitbucket-pipelines.yml)
-    - [ci.yaml](.github/workflows/ci.yaml)
-    - [cd_develop.yaml](.github/workflows/cd_develop.yaml)
-    - [cd_qa.yaml](.github/workflows/cd_qa.yaml)
-    - [cd_staging.yaml](.github/workflows/cd_staging.yaml)
-    - [cd_production.yaml](.github/workflows/cd_production.yaml)
+  - [README.md](#requirements)
+  - [bitbucket-pipelines.yml](bitbucket-pipelines.yml)
+  - [ci.yaml](.github/workflows/ci.yaml)
+  - [cd_develop.yaml](.github/workflows/cd_develop.yaml)
+  - [cd_qa.yaml](.github/workflows/cd_qa.yaml)
+  - [cd_staging.yaml](.github/workflows/cd_staging.yaml)
+  - [cd_production.yaml](.github/workflows/cd_production.yaml)
 
 ## Upgrade Melos
+
 - Update Melos version in:
-    - [README.md](#requirements)
-    - [Install](#install)
-    - [bitbucket-pipelines.yml](bitbucket-pipelines.yml)
-    - [ci.yaml](.github/workflows/ci.yaml)
-    - [cd_develop.yaml](.github/workflows/cd_develop.yaml)
-    - [cd_qa.yaml](.github/workflows/cd_qa.yaml)
-    - [cd_staging.yaml](.github/workflows/cd_staging.yaml)
-    - [cd_production.yaml](.github/workflows/cd_production.yaml)
+  - [README.md](#requirements)
+  - [Install](#install)
+  - [bitbucket-pipelines.yml](bitbucket-pipelines.yml)
+  - [ci.yaml](.github/workflows/ci.yaml)
+  - [cd_develop.yaml](.github/workflows/cd_develop.yaml)
+  - [cd_qa.yaml](.github/workflows/cd_qa.yaml)
+  - [cd_staging.yaml](.github/workflows/cd_staging.yaml)
+  - [cd_production.yaml](.github/workflows/cd_production.yaml)
 
 ## License
 
